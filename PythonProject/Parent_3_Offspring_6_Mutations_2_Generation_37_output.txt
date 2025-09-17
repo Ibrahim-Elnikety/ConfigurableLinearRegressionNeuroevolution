@@ -1,0 +1,44 @@
+Model Parameters:
+num_parents:   3
+num_offspring: 6
+num_mutations: 2
+num_generations: 37
+mutpb:         0.2
+sigma:         0.1
+max_reviews:   2000
+
+Data splits:
+train: 1600, val: 200, test: 200
+vocab size: 13579
+time: 57.43062424659729
+
+------------------------------------------
+Training Set (Champion):
+MSE: 3.2170, RMSE: 1.7936, Mean Diff: -0.1074
+# columns = pred 1-5, rows = true 1-5
+    1   2   3   4   5
+1  46   7   8  11  35
+2  52   5   8   9  62
+3  47  10  13  11  92
+4  96  20  18  31  298
+5  100  26  31  26  538
+------------------------------------------
+Validation Set (Champion):
+MSE: 1.6332, RMSE: 1.2780, Mean Diff: 0.4994
+# columns = pred 1-5, rows = true 1-5
+    1   2   3   4   5
+1   8   2   0   0   6
+2   6   1   1   0   6
+3   3   0   3   2  12
+4   0   0   1   7  56
+5   3   0   0   2  81
+------------------------------------------
+Test Set (Champion):
+MSE: 2.6123, RMSE: 1.6163, Mean Diff: 0.4607
+# columns = pred 1-5, rows = true 1-5
+    1   2   3   4   5
+1   1   0   0   3   8
+2   3   1   1   0  10
+3   4   0   0   1  14
+4   7   2   1   1  57
+5   3   1   5   6  71
